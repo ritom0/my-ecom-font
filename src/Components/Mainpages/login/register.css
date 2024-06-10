@@ -1,0 +1,64 @@
+/* Register.css */
+
+.register-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f2f5;
+  }
+  
+  .register-page form {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+  }
+  
+  .register-page form input {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  .register-page form input:focus {
+    outline: none;
+    border-color: #ff4500;
+    box-shadow: 0 0 5px rgba(255, 69, 0, 0.5);
+  }
+  
+  .register-page form .row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .register-page form button {
+    background-color: #ff4500;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .register-page form button:hover {
+    background-color: #e63900;
+  }
+  
+  .register-page form a {
+    color: #ff4500;
+    text-decoration: none;
+    font-size: 14px;
+  }
+  
+  .register-page form a:hover {
+    text-decoration: underline;
+  }
+  
