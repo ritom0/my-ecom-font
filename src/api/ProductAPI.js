@@ -22,5 +22,4 @@ const ProductAPI = () => {
   };
 };
 
-export default ProductAPI;
-
+export default ProductAPI;    

@@ -1,7 +1,6 @@
 import React, { useContext, useEffect, useState } from 'react'
 import {  useParams, useNavigate } from 'react-router-dom'
 import { GlobalState } from '../../../../GlobalState'
-import { Link } from 'react-router-dom'
 
 const DetailProduct = () => {
 

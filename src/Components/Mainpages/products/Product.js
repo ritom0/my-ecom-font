@@ -11,6 +11,7 @@ const Product = () => {
   }
 
   const [products] = state.productAPI.products;
+  
 
   // Ensure products array is defined
   if (!products || products.length === 0) {
