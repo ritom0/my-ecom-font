@@ -6,7 +6,7 @@ const ProductAPI = () => {
 
   const getProducts = async () => {
     try {
-      const res = await axios.get('/api/products');
+      const res = await axios.get('https://my-ecom-back-13.onrender.com/api/products');
       setProducts(res.data.products); // Set the fetched products to the state
     } catch (error) {
       console.error('Failed to fetch products', error);
