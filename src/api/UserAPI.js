@@ -11,7 +11,7 @@ const UserAPI = (token) => {
             const getUser = async () => {
                 try {
                     const res = await axios.get('https://my-ecom-back-13.onrender.com/user/infor', {
-                        headers: { Authorization: token }
+                        headers: { Authorization: Bearer ${token} }
                     });
 
                     setIsLogged(true);
