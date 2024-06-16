@@ -10,7 +10,7 @@ export const DataProvider = ({ children }) => {
 
   const refreshToken = async () => {
     try {
-      const res = await axios.post('https://my-ecom-back-13.onrender.com/user/cdn', {}, {
+      const res = await axios.post('https://my-ecom-back-13.onrender.com/user/refresh_token', {}, {
         withCredentials: true // Ensure cookies are sent with the request if needed
       });
       setToken(res.data.accesstoken);
