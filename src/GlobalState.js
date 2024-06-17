@@ -12,7 +12,6 @@ export const DataProvider = ({ children }) => {
     try {
       const res = await axios.post('https://my-ecom-back-13.onrender.com/user/refresh_token', {}, {
         withCredentials: true ,// Ensure cookies are sent with the request if needed
-        sameSite: 'None'
       });
       setToken(res.data.accesstoken);
       console.log('Token refreshed:', res.data.accesstoken);
