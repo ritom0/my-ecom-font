@@ -1,6 +1,6 @@
 import  { useEffect, useState } from 'react';
 import axios from 'axios';
-const baseUrl = process.env.REACT_APP_BACKEND_URL;
+const baseUrl = process.env.REACT_APP_API_URL;
 
 
 const UserAPI = (token) => {
