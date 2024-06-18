@@ -1,5 +1,7 @@
 import  { useEffect, useState } from 'react';
 import axios from 'axios';
+const baseUrl = process.env.REACT_APP_BACKEND_URL;
+
 
 const UserAPI = (token) => {
     const [isLogged, setIsLogged] = useState(false);
@@ -10,8 +12,8 @@ const UserAPI = (token) => {
         if (token) {
             const getUser = async () => {
                 try {
-                    const res = await axios.get('https://my-ecom-back-13.onrender.com/user/infor', {
-                        headers: { Authorization: Bearer ${token} }
+                    const res = await axios.get(`${baseUrl}/user/infor`, {
+                        headers: { Authorization: token }
                     });
 
                     setIsLogged(true);
