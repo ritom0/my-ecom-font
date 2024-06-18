@@ -10,7 +10,7 @@ export const DataProvider = ({ children }) => {
 
   const refreshToken = async () => {
     try {
-      const res = await axios.post(`${process.env.REACT_APP_API_URL}/user/refresh_token`, {}, {
+      const res = await axios.post(`https://my-ecom-font.vercel.app/user/refresh_token`, {}, {
         withCredentials: true ,// Ensure cookies are sent with the request if needed
       });
       setToken(res.data.accesstoken);
